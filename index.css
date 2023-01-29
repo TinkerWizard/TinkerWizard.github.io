@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap');
+
+body
+{
+    background: #006E80;
+    margin: 0;
+    padding: 0;
+    font-family: 'Unbounded';
+    padding: 50px;
+    
+}
+h1
+{
+    font-family: 'Unbounded';
+    font-weight: 300;
+    color: #111;
+    margin: 0;
+    margin-top: 10px;
+}
+.main-section
+{
+    /* margin-bottom: 300px; */
+    margin-bottom: 0;
+    padding-bottom: 0;
+    height: 100vh;
+}
+.main--intro
+{
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    font-weight: 500;
+    font-size: 2.5rem;
+    color: #004A51;
+    margin-top: 100px; 
+}
+.mouse {
+	width: 50px;
+	height: 90px;
+	border: 3px solid #111;
+	border-radius: 60px;
+	position: absolute;
+    top: 80%;
+    left: 50%;
+    opacity: 0.5;
+}
+.mouse::before {
+    content: '';
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #111;
+    border-radius: 50%;
+    opacity: 1;
+    animation: wheel 2s infinite;
+    -webkit-animation: wheel 2s infinite;
+}
+
+@keyframes wheel {
+	to {
+		opacity: 0;
+		top: 60px;
+	}
+}
+
+@-webkit-keyframes wheel {
+	to {
+		opacity: 0;
+		top: 60px;
+	}
+}
+
+.about-section
+{
+    margin-top: 0;
+    padding-top: 0;
+}
+.about--info-and-profile
+{
+    /* color: #75BFC8; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#know-me-heading, #works-heading, #contact-heading
+{
+    font-weight: 400;
+    font-size: 3rem;
+    color: #EFEFEB;
+    text-shadow: 2px 2px #465259;
+}
+
+.about--info-and-profile
+{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+.about--info
+{
+    width: 550px;
+    opacity: 0.5;
+    font-size: 1.5rem;
+    line-height: 34px;
+}
+#main-profile
+{
+    height: 550px;
+    border-radius: 20px;
+}
+
+.my-works
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-works
+{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+.works
+{
+    width: 900px;
+    /* height: 500px; */
+    padding-bottom: 50px;
+    border-radius: 25px;
+    box-shadow: 2px 2px 2px 2px #111;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #317782;
+}
+.design-banners
+{
+    display: flex;
+    gap: 100px;
+    margin-bottom: 15px;
+}
+.mobile-designs
+{
+    height: 300px;
+    transition: ease-in-out 250ms;
+}
+.mobile-designs:hover
+{
+    transform: scale(1.15);
+}
+
+.desktop-designs
+{
+    height: 150px;
+}
+.project-yaritza
+{
+    gap: 50px !important;
+}
+.desktop-designs-2
+{
+    height: 250px;
+}
+
+.project-links
+{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 250px;
+}
+
+.project-links > a 
+{
+    opacity: 0.5;
+    text-decoration-line: none;
+    color: #111;
+    font-size: 1.15rem;
+}
+.brief-and-roles
+{
+    display: flex;
+    gap: 50px;
+    color: #fff ;
+    text-shadow: 2px 2px #465259;
+
+}
+
+.project-heading
+{
+    font-size: 1.5rem;
+    color: #fff;
+    text-shadow: 2px 2px #465259;
+
+}
+.design-banners-spotify
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px !important;
+}
+.desktop-designs-2
+{
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px #111;
+}
+.case-studies-link
+{
+    background: #EFEFEB;
+    padding: 5px 10px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px 1px #111;
+    transition: ease-in-out 250ms;
+}
+.case-studies-link:hover
+{
+    transform: scale(1.25);
+}
+.designs-links
+{
+    background: #EFEFEB;
+    padding: 5px 10px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px 1px #111;
+    transition: ease-in-out 250ms;
+}
+.designs-links:hover
+{
+    transform: scale(1.25);
+}
+.social-links-div
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.social-links-div
+{
+    display: flex;
+    gap: 20px;
+}
+.social-links
+{
+    width: 50px;
+}
+
+.about-section, .works-section
+{
+    margin-bottom: 150px;
+}
+.contact-section
+{
+    margin-bottom: 50px;
+
+}
+
+.about--info > p
+{
+    color: #D8EEF3;
+    color: #111;
+    /* text-shadow: 1px 1px; */}
+#new-oppurtunities
+{
+    font-size: 1.65rem;
+    font-weight: 500;
+    color: #111;
+    text-shadow: 0px 0px !important;
+    background: #EFEFEB;
+    border-radius: 5px;
+    padding: 10px;
+}
+#resume
+{
+    color: #111;
+    background: #fff;
+    padding: 15px 20px;
+    border-radius: 55px;
+    text-decoration-line: none ;
+    box-shadow: 2px 2px #111;
+}
