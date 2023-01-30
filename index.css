@@ -2,37 +2,12 @@
 
 body
 {
-    background: #006E80;
+    background: #FFFFFF;
     margin: 0;
     padding: 0;
     font-family: 'Unbounded';
     padding: 50px;
-    
-}
-h1
-{
-    font-family: 'Unbounded';
-    font-weight: 300;
-    color: #111;
-    margin: 0;
-    margin-top: 10px;
-}
-.main-section
-{
-    /* margin-bottom: 300px; */
-    margin-bottom: 0;
-    padding-bottom: 0;
-    height: 100vh;
-}
-.main--intro
-{
-    display: flex;
-    text-align: left;
-    flex-direction: column;
-    font-weight: 500;
-    font-size: 2.5rem;
-    color: #004A51;
-    margin-top: 100px; 
+    color: #111 !important;
 }
 .mouse {
 	width: 50px;
@@ -42,7 +17,6 @@ h1
 	position: absolute;
     top: 80%;
     left: 50%;
-    opacity: 0.5;
 }
 .mouse::before {
     content: '';
@@ -72,48 +46,108 @@ h1
 		top: 60px;
 	}
 }
-
+/*
+Main section
+*/
+.main-section
+{
+    margin-bottom: 0;
+    padding-bottom: 0;
+    height: 100vh;
+}
+.main--intro
+{
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    font-weight: 500;
+    font-size: 2.5rem;
+    margin-top: 100px; 
+}
+.main--highlight
+{
+    color: #1FDF64;
+}
+/*
+About section
+*/
 .about-section
 {
     margin-top: 0;
     padding-top: 0;
 }
-.about--info-and-profile
-{
-    /* color: #75BFC8; */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 #know-me-heading, #works-heading, #contact-heading
 {
     font-weight: 400;
     font-size: 3rem;
-    color: #EFEFEB;
-    text-shadow: 2px 2px #465259;
 }
 
 .about--info-and-profile
 {
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: row;
     gap: 50px;
 }
 .about--info
 {
     width: 550px;
-    opacity: 0.5;
+    /* opacity: 0.5; */
     font-size: 1.5rem;
     line-height: 34px;
 }
+.about--info--highlights
+{
+    color: #1FDF64;
+    font-weight: 500;
+}
+.about--info > p
+{
+    color: #111111;
+    line-height: 34px;
+}
+
+#resume
+{
+    color: #111;
+    background: #1FDF64;
+    padding: 15px 20px;
+    border-radius: 55px;
+    text-decoration-line: none ;
+    box-shadow: 2px 2px #111;
+}
+#new-oppurtunities
+{
+    font-size: 1.65rem;
+    font-weight: 500;
+    color: #fff;
+    text-shadow: 2px 2px #111;
+    /* background: #FF6E31; */
+    border-radius: 5px;
+    padding: 10px;
+    -webkit-animation:colorchange 2.5s infinite alternate;    
+}
+@-webkit-keyframes colorchange {
+    0% {
+      background: black;
+    }         
+    50% {       
+      background: #3E83FB;
+    }            
+    100% {     
+      background: black;
+    }
+  }
 #main-profile
 {
     height: 550px;
     border-radius: 20px;
 }
 
+/*
+works section
+*/
 .my-works
 {
     display: flex;
@@ -130,15 +164,27 @@ h1
 }
 .works
 {
-    width: 900px;
-    /* height: 500px; */
+    width: 1150px;
     padding-bottom: 50px;
     border-radius: 25px;
-    box-shadow: 2px 2px 2px 2px #111;
+    border: 5px solid #111; 
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: #317782;
+}
+.brief-and-roles
+{
+    display: flex;
+    gap: 50px;
+    color: #111 ;
+    font-size: 1.25rem;
+}
+
+.project-heading
+{
+    font-size: 1.75rem;
+    color: #111;
+
 }
 .design-banners
 {
@@ -148,17 +194,12 @@ h1
 }
 .mobile-designs
 {
-    height: 300px;
-    transition: ease-in-out 250ms;
-}
-.mobile-designs:hover
-{
-    transform: scale(1.15);
+    height: 450px;
 }
 
 .desktop-designs
 {
-    height: 150px;
+    height: 200px;
 }
 .project-yaritza
 {
@@ -166,7 +207,7 @@ h1
 }
 .desktop-designs-2
 {
-    height: 250px;
+    height: 300px;
 }
 
 .project-links
@@ -178,27 +219,11 @@ h1
 
 .project-links > a 
 {
-    opacity: 0.5;
     text-decoration-line: none;
     color: #111;
     font-size: 1.15rem;
 }
-.brief-and-roles
-{
-    display: flex;
-    gap: 50px;
-    color: #fff ;
-    text-shadow: 2px 2px #465259;
 
-}
-
-.project-heading
-{
-    font-size: 1.5rem;
-    color: #fff;
-    text-shadow: 2px 2px #465259;
-
-}
 .design-banners-spotify
 {
     display: flex;
@@ -212,19 +237,19 @@ h1
 }
 .case-studies-link
 {
-    background: #EFEFEB;
     padding: 5px 10px;
     border-radius: 20px;
     box-shadow: 1px 1px 1px 1px #111;
     transition: ease-in-out 250ms;
+    color: black;
 }
 .case-studies-link:hover
 {
     transform: scale(1.25);
+    background: #1FDF64;
 }
 .designs-links
 {
-    background: #EFEFEB;
     padding: 5px 10px;
     border-radius: 20px;
     box-shadow: 1px 1px 1px 1px #111;
@@ -233,17 +258,14 @@ h1
 .designs-links:hover
 {
     transform: scale(1.25);
+    background: #1FDF64;
 }
 .social-links-div
 {
     display: flex;
     justify-content: center;
-    align-items: center;    
-}
-.social-links-div
-{
-    display: flex;
-    gap: 20px;
+    align-items: center;   
+    gap: 20px; 
 }
 .social-links
 {
@@ -259,28 +281,11 @@ h1
     margin-bottom: 50px;
 
 }
-
-.about--info > p
+#copyright
 {
-    color: #D8EEF3;
-    color: #111;
-    /* text-shadow: 1px 1px; */}
-#new-oppurtunities
-{
-    font-size: 1.65rem;
-    font-weight: 500;
-    color: #111;
-    text-shadow: 0px 0px !important;
-    background: #EFEFEB;
-    border-radius: 5px;
-    padding: 10px;
-}
-#resume
-{
-    color: #111;
-    background: #fff;
-    padding: 15px 20px;
-    border-radius: 55px;
-    text-decoration-line: none ;
-    box-shadow: 2px 2px #111;
+    font-size: .85rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
 }
