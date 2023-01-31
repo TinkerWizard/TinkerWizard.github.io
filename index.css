@@ -66,7 +66,7 @@ Main section
 }
 .main--highlight
 {
-    color: #1FDF64;
+    color: #3E83FB;
 }
 /*
 About section
@@ -99,7 +99,7 @@ About section
 }
 .about--info--highlights
 {
-    color: #1FDF64;
+    color: #3E83FB;
     font-weight: 500;
 }
 .about--info > p
@@ -110,12 +110,13 @@ About section
 
 #resume
 {
-    color: #111;
-    background: #1FDF64;
+    color: #fff;
+    background: #3E83FB;
     padding: 15px 20px;
     border-radius: 55px;
     text-decoration-line: none ;
     box-shadow: 2px 2px #111;
+    text-shadow: 1px 1px #111;
 }
 #new-oppurtunities
 {
@@ -246,7 +247,9 @@ works section
 .case-studies-link:hover
 {
     transform: scale(1.25);
-    background: #1FDF64;
+    background: #3E83FB;
+    text-shadow: 1px 1px #111;
+    color: #fff;
 }
 .designs-links
 {
@@ -258,7 +261,9 @@ works section
 .designs-links:hover
 {
     transform: scale(1.25);
-    background: #1FDF64;
+    background: #3E83FB;
+    text-shadow: 1px 1px #111;
+    color: #fff;
 }
 .social-links-div
 {
