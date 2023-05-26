@@ -7,17 +7,41 @@
     <title>Sadhasivam | Design Portfolio</title>
     <link rel="icon" type="image/x-icon" href="./assets/icons/favicon.png?">
     <link rel="stylesheet" href="index.css">
-    <link href="https://api.fontshare.com/v2/css?f[]=chillax@1,600,500,300,700,400,200&display=swap" rel="stylesheet">
-    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@701,200,500,301,201,1,300,2,601,600,401,501,400,700&display=swap" rel="stylesheet">
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@1,900,700,500,301,701,300,501,401,901,400,2&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="mouse"></div>
+    <nav class="nav-bar">
+        <div class="home">
+            <a href="index.html" class="nav-links">Sadhasivam</a>
+        </div>
+        <div class="other-pages">
+            <a href="index.html" id="home-link" class="nav-links">Home</a>
+            <a href="works.html" id="work-link" class="nav-links">Works</a>
+            <a href="about.html" id="about-link" class="nav-links">About</a>
+        </div>
+    </nav>
+    <div class="nav-bar-mobile">
+        <div class="home-mobile">
+            <a href="index.html" class="nav-links">Sadhasivam</a>
+        </div>
+        <div class="nav-icon-links">
+            <div class="nav-mobile-icon">
+                <img src="./assets/hamburger.png" alt="hamburger" id="hamburger">
+            </div>
+            <div class="nav-mobile">
+                <a href="index.html" id="home-link" class="nav-links-mobile">Home</a>
+                <a href="works.html" id="work-link" class="nav-links-mobile">Works</a>
+                <a href="about.html" id="about-link" class="nav-links-mobile">About</a>
+            </div>
+        </div>
+    </div>
+    <div class="overlay"></div>
     <div class="main-section">
         <div class="main--intro">
-            <span class="main--intro--lines">Hiya, I’m 
+            <span class="main--intro--lines" id="hi-iam-sadhasivam">Hiya, I’m 
                 <span class="main--highlight">Sadhasivam.</span>
             </span>
-            <span class="main--intro--lines">I make elegant 
+            <span class="main--intro--lines">I design elegant 
                 <span class="main--highlight">Interfaces</span> and</span>
             <span class="main--intro--lines">improve people’s life by making </span>
             <span class="main--intro--lines">their digital 
@@ -29,121 +53,21 @@
                 <span class="main--highlight">Digital screens.</span>
             </span>
         </div>
-    </div>
-    <div class="about-section">
-        <p id="know-me-heading">Get to know me!!!</p>
-        <div class="about--info-and-profile">
-            <div class="about--info">
-                <p>Hey, thanks for your time.</p>
-                <p >I'm Sadhasivam, a computer science undergraduate. 
-                <br>User experience and user interface got my attention lately. So, I ventured into UX and UI realm.</p>
-                <!-- <p align="justify">NGL, it <span class="about--info--highlights">was</span> harder to have a sharp eye for the perfect colour and 
-                understand what the users <span style="text-decoration: line-through;">want</span> <span class="about--info--highlights">NEED.</span> But, understanding the user's NEED, enhancing their experience and playing
-                with the colours is <span class="about--info--highlights">fun and more challenging</span> for me. That's why I love UX and UI. If not challenging, it's not worth it!!</p>
-                <p align="justify">I love colours (don't ask me how many colours exist, I dunno), ideating (I work on obtaining an achievable result) and doodling (imagine a kid's doodle, that would be mine).</p> -->
-                <p align="justify">As a computer science undergraduate with a passion for UXUI, I have developed a deep understanding of <span class="about--info--highlights">user-centered design</span> principles and how to apply them to create exceptional user experiences. Through my personal projects, I have honed my skills in designing user interfaces that are not only visually appealing but also intuitive and easy to use.</p>
-                <p align="justify">My UXUI portfolio showcases a range of projects that highlight my creativity, attention to detail, and ability to solve complex design challenges. From wireframes and prototyping to polished final designs, I demonstrated proficiency in various design tools and software.</p>
-                <p align="justify">Throughout my work, I prioritize <span class="about--info--highlights">research</span> to ensure that my designs meet the needs and preferences of the target audience.</p>
-                <p align="justify">Overall, my passion for UXUI, combined with my technical expertise and collaborative mindset, makes me a strong candidate for any UXUI design project. </p>
-                <a href="https://drive.google.com/file/d/1uvkV4hSSwwl9xPjt_uZJSiHSrzBRVNTH/view?usp=sharing" id="resume" target="_blank">Resume</a>
-                <p style="font-size: 1rem;">You can see a pinch of HTML, CSS and JS in me.</p>
-                <span id="new-oppurtunities">I'm open to new opportunities.🙂</span>
+            <div class="device">
+                <div class="top-notch">
+                    <div class="laptop-icons">
+                        <img src="./assets/close.png" alt="close" class="close-mini-max-icon">
+                        <img src="./assets/minimize.png" alt="minimize" class="close-mini-max-icon">
+                        <img src="./assets/maximize.png" alt="maximize" class="close-mini-max-icon">
+                    </div>
+                </div>
+                <!-- <div class="text-content"></div> -->
+                <div class="bottom-area"></div>
             </div>
-            <img src="./assets/sadhasivam/sadha-main.webp" alt="sadhasivam" id="main-profile">
-        </div>
-    </div>
-    <div class="works-section">
-        <p id="works-heading">My works</p>
-        <div class="my-works">
-            <div class="works" id="covey-todo">
-                <p class="project-heading">Covey's To-do</p>
-                <div class="brief-and-roles">
-                    <p class="brief">To-Do prioritizing app</p>
-                    <p class="roles">UX || UI || Mobile app</p>
-                </div>
-                <div class="design-banners">
-                    <img src="./assets/covey-1.webp" alt="" class="mobile-designs">
-                    <img src="./assets/covey-2.webp" alt="" class="mobile-designs">
-                    <img src="./assets/covey-3.webp" alt="" class="mobile-designs">
-                </div>
-                <div id="covey-links-div" class="project-links">
-                    <a href="https://medium.com/@ishidaa-designs/coveys-to-do-case-study-f5f3c88651cb" target="_blank" class="case-studies-link">Case study</a>
-                    <a href="https://www.behance.net/gallery/162413167/Coveys-To-Do" target="_blank" class="designs-links">Design</a>
-                </div>
-            </div>
-            <div class="works" id="spotify-lookup">
-                <p class="project-heading">Spotify Lookup</p>
-                <div class="brief-and-roles">
-                    <p class="brief">Music experience enhancing digital tool!</p>
-                    <p class="roles">UX || UI || Feature enhancement</p>
-                </div>
-                <div class="design-banners design-banners-spotify">
-                    <img src="./assets/spotify-1.webp" alt="" class="desktop-designs">
-                    <img src="./assets/spotify-2.webp" alt="" class="desktop-designs">
-                </div>
-                <div id="spotify-links" class="project-links">
-                    <a href="https://medium.com/@ishidaa-designs/spotify-lookup-case-study-6a31d1b7594f" target="_blank" class="case-studies-link">Case study</a>
-                    <a href="https://www.behance.net/gallery/162448813/Spotify-Lookup" target="_blank" class="designs-links">Design</a>
-                </div>
-            </div>
-            <div class="works" id="time-geared">
-                <p class="project-heading">Time Geared</p>
-                <div class="brief-and-roles">
-                    <p class="brief">Reminders for your repetitive tasks</p>
-                    <p class="roles">UX || UI || Mobile app</p>
-                </div>
-                <div class="design-banners">
-                    <img src="./assets/time-geared-1.webp" alt="" class="mobile-designs">
-                    <img src="./assets/time-geared-2.webp" alt="" class="mobile-designs">
-                    <img src="./assets/time-geared-3.webp" alt="" class="mobile-designs" >
-                </div>
-                <div id="time-links" class="project-links">
-                    <a href="https://medium.com/@ishidaa-designs/time-geared-case-study-2de2ec23cc97" target="_blank" class="case-studies-link">Case study</a>
-                    <a href="https://www.behance.net/gallery/162449581/Time-Geared" target="_blank" class="designs-links">Design</a>
-                </div>
-            </div>
-            <div class="works" id="yaritza">
-                <p class="project-heading">Yaritza: Women's clothing E-Shop</p>
-                <div class="brief-and-roles">
-                    <p class="brief">E-Commerce website</p>
-                    <p class="roles">UX || UI || Branding</p>
-                </div>
-                <div class="design-banners project-yaritza">
-                    <img src="./assets/yaritza-1.webp" alt="" class="desktop-designs-2">
-                    <img src="./assets/yaritza-2.webp" alt="" class="desktop-designs-2">
-                </div>
-                <div id="yaritza-links" class="project-links">
-                    <a href="https://www.behance.net/gallery/162450109/Yaritza-Women-clothing-e-shop" target="_blank" class="designs-links">Design</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="contact-section">
-        <p id="contact-heading">Find me here!</p>
-        <div class="social-links-div">
-            <a href="https://www.linkedin.com/in/sadhasivam-s/" target="_blank">
-                <img src="./assets/icons/Linkedin.webp" alt="" class="social-links">
-            </a>
-            <a href="mailto:ishidaa.designs@gmail.com" target="_blank">
-                <img src="./assets/icons/Google.webp" alt="" class="social-links">
-            </a>
-            <a href="https://www.behance.net/Ishidaa_Asahi" target="_blank">
-                <img src="./assets/icons/Behance.webp" alt="" class="social-links">
-            </a>
-            <a href="https://twitter.com/ishidaaDesigns" target="_blank">
-                <img src="./assets/icons/Twitter.webp" alt="" class="social-links">
-            </a>
-            <a href="https://medium.com/@ishidaa-designs" target="_blank">
-                <img src="./assets/icons/Medium.webp" alt="" class="social-links">
-            </a>
-            <a href="https://open.spotify.com/user/31azqiwgnvkljv6acp4ifwribn7y?si=77281f3aa0c44afa" target="_blank">
-                <img src="./assets/icons/Spotify.webp" alt="" class="social-links">
-            </a>
-        </div>
-    </div>
+    </div>/
     <footer id="copyright">
         <p>Website made with ❤️ by Sadhasivam ©️ 2023</p>
     </footer>
-    <script src="main.js"></script>
+    <script src="./index.js"></script>
 </body>
 </html>

@@ -1,0 +1,48 @@
+.hero-section
+{
+    margin-top: 100px;
+    display: flex;
+    gap: 50px;
+    margin-bottom: 100px;
+}
+.title-and-brief
+{
+    flex: 1;
+}
+.project-cover-wrapper
+{
+    flex: 1;
+}
+.project-cover
+{
+    width: 650px;
+}
+.title
+{
+    font-size: 5rem;
+    font-weight: 500;
+    width: 350px;
+}
+
+.overview-abstract-wrapper
+{
+    display: flex;
+    gap: 50px;
+}
+.overview-and-roles
+{
+    flex: 1;
+
+}
+.abstract
+{
+    flex: 1;
+}
+.roles-list
+{
+    line-height: 40px;
+}
+.roles
+{
+    list-style: none;
+}

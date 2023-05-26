@@ -1,0 +1,176 @@
+.about-section
+{
+    margin-top: 100px;
+    padding-top: 0;
+}
+
+.about--info-and-profile
+{
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    flex-direction: row;
+    gap: 100px;
+    padding: 0 100px 0 100px;
+}
+.about--info
+{
+    /* width: 600px; */
+    font-size: 1.75rem;
+    line-height: 34px;
+    font-weight: 450;
+}
+.about--info--highlights
+{
+    font-weight: 500;
+    background-color: #8eb6fc;
+    /* padding: 0 2px 0 2px; */
+    border-radius: 5px;
+    padding: 0 10px 0 10px;
+    color: #fff;
+}
+.about--info > p
+{
+    color: #111111;
+    line-height: 34px;
+}
+.resume-opportunities
+{
+    display: block;
+    flex-direction: column;
+    flex: 1;
+    gap: 20px;
+}
+#resume
+{
+    color: #fff;
+    background: #8eb6fc;
+    padding: 15px 50px;
+    border-radius: 55px;
+    text-decoration-line: none ;
+    box-shadow: 2px 2px #111;
+    font-weight: 500;
+    margin-top: 20px;
+    max-width: 50px ;
+}
+#new-oppurtunities
+{
+    font-size: 1.65rem;
+    font-weight: 500;
+    color: #fff;
+    text-shadow: 2px 2px #111;
+    border-radius: 5px;
+    max-width: 400px;
+    padding: 10px;
+    -webkit-animation:colorchange 2.5s infinite alternate;    
+}
+@-webkit-keyframes colorchange {
+    0% {
+      background: black;
+    }         
+    50% {       
+      background: #8eb6fc;
+    }            
+    100% {     
+      background: black;
+    }
+  }
+#main-profile
+{
+    height: 650px;
+    border-radius: 20px;
+}
+
+
+
+.social-links-div
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    gap: 20px; 
+}
+.social-links
+{
+    width: 50px;
+}
+
+
+.contact-section
+{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 0 100px;
+}
+#contact-heading
+{
+    font-size: 2.75rem;
+    font-weight: 600;
+}
+#copyright
+{
+    font-size: 1.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+}
+
+
+@media (min-width: 360px) and (max-width: 768px) 
+{
+    .about-section
+    {
+        margin-top: 50px;
+        padding-top: 0;
+    }
+    .about--info-and-profile
+    {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+        padding: 0 10px 0 10px;
+    }
+    .about--info
+    {
+        font-size: 1rem;
+        line-height: 0px;
+        font-weight: 500;
+        margin-bottom: 50px;
+    }
+    .resume-opportunities
+    {
+        display: flex;
+        gap: 10px;
+    }
+    #resume
+    {
+        padding: 15px 30px;
+        /* margin-top: 200px; */
+        max-width: 30px;
+    }
+    #main-profile
+    {
+        order: -1;
+        height: 550px;
+    }
+    #new-oppurtunities
+    {
+        font-size: 1rem;    
+        text-shadow: 1px 1px #111;
+        max-width: 250px;
+        padding: 20px 10px;
+    }
+    .social-links
+    {
+        width: 35px;
+    }
+
+    .contact-section
+    {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 0 10px;
+    }
+}
