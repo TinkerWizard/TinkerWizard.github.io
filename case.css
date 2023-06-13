@@ -46,3 +46,15 @@
 {
     list-style: none;
 }
+.information-architecture
+{
+   display: flex;
+   justify-self: center;
+   align-items: center;
+}
+.information-architecture-img
+{
+    display: block;
+    text-align: center;
+    width: 950px;
+}
